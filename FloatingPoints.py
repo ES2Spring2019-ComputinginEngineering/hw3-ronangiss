@@ -55,10 +55,10 @@ def almost_equal(A, B):
     # returns True (boolean) if the difference is less than or equal to 0.000000001 which in Python may be written as 10**-9.
     # It should return False (boolena) if the difference is greater than 0.000000001.
     # Create your function here.
-    if(abs(A-B) <= 0.000000001):
-        return True
-    else:
+    if(abs(A-B) > 0.000000001):
         return False
+    else:
+        return True
 
 
 # ****************************************************************************************************
